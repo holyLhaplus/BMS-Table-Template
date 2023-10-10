@@ -86,12 +86,13 @@
 
                     // Artist
                     $("<td width='40%'>" + info[i].artist + "</td>").appendTo(str);
+
                     // Comment
-                    $("<td width='10%'>" + info[i].タイプ1 + "</td>").appendTo(str);
+                    $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
                     str.appendTo(obj);
                     count++;
 
-
+                }
                 if (obj_sep != null) {
                     obj_sep.html("<td class='table-dark' style='text-align:center' colspan='4'>" + "<b>" + mark + x +
                         " (" + count + "譜面)</b></td>");
