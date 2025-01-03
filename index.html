@@ -92,10 +92,10 @@
                     $("<td width='40%'>" + info[i].artist + "</td>").appendTo(str);
 
                     // ChartView
-                    $("<td width='45%' class="text-center">" +
+                    $("<td width='45%' >" +
                         "<a href='https://bms-score-viewer.pages.dev/view?md5=" + info[
                             i]
-                        .md5 + "' target='_blank'>" + info[i].ChartView + "</a></td>").appendTo(str);
+                        .md5 + "' target='_blank' class="text-center">" + info[i].ChartView + "</a></td>").appendTo(str);
                     
                     // Comment
                     $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
