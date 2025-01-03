@@ -62,7 +62,7 @@
                 var obj = $("#table_int");
 
                 obj.html("");
-                $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>譜面画像</th><th>Comment</th></tr></thead><tbody>")
+                $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>ChartView</th><th>Comment</th></tr></thead><tbody>")
                     .appendTo(obj);
                 var obj_sep = null;
                 for (var i = 0; i < info.length; i++) {
@@ -91,11 +91,11 @@
                     // Artist
                     $("<td width='40%'>" + info[i].artist + "</td>").appendTo(str);
 
-                    // 譜面画像
+                    // ChartView
                     $("<td width='45%'>" +
                         "<a href='https://bms-score-viewer.pages.dev/view?md5=" + info[
                             i]
-                        .md5 + "' target='_blank'>" + info[i].譜面画像 + "</a></td>").appendTo(str);
+                        .md5 + "' target='_blank'>" + info[i].ChartView + "</a></td>").appendTo(str);
                     
                     // Comment
                     $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
