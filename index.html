@@ -68,7 +68,7 @@
                 for (var i = 0; i < info.length; i++) {
                     if (x != info[i].level) {
                         if (obj_sep != null) {
-                            obj_sep.html("<td colspan='4'>" + "<b>" + mark + x + " (" + count +
+                            obj_sep.html("<td colspan='5'>" + "<b>" + mark + x + " (" + count +
                                 "譜面)</b></td>");
                         }
                         obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
@@ -95,7 +95,7 @@
                     $("<td width='45%'>" +
                         "<a href='https://bms-score-viewer.pages.dev/view?md5=" + info[
                             i]
-                        .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+                        .md5 + "' target='_blank'>" + info[i].譜面画像 + "</a></td>").appendTo(str);
                     
                     // Comment
                     $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
@@ -104,7 +104,7 @@
 
                 }
                 if (obj_sep != null) {
-                    obj_sep.html("<td class='table-dark' style='text-align:center' colspan='4'>" + "<b>" + mark + x +
+                    obj_sep.html("<td class='table-dark' style='text-align:center' colspan='5'>" + "<b>" + mark + x +
                         " (" + count + "譜面)</b></td>");
                 }
             }
