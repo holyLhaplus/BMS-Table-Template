@@ -62,7 +62,7 @@
                 var obj = $("#table_int");
 
                 obj.html("");
-                $("<thead class='table-dark' style='text-align:center'><tr><th>Level</th><th>Title</th><th>Artist</th><th>ChartView</th><th>Comment</th></tr></thead><tbody>")
+                $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th style='text-align:center'>ChartView</th><th>Comment</th></tr></thead><tbody>")
                     .appendTo(obj);
                 var obj_sep = null;
                 for (var i = 0; i < info.length; i++) {
@@ -98,7 +98,7 @@
                         .md5 + "' target='_blank' >" + info[i].ChartView + "</a></td>").appendTo(str);
                     
                     // Comment
-                    $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
+                    $("<td width='10%'  style='text-align:center'>" + info[i].comment + "</td>").appendTo(str);
                     str.appendTo(obj);
                     count++;
 
